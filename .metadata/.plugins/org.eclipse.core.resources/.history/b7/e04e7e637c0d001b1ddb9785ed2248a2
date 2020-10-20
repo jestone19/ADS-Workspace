@@ -1,0 +1,18 @@
+
+public class Tester 
+{
+	public static void main (String[] args)
+	{
+		int n = 20000;
+		int[] a = new int[n];
+		
+		for (int i = 0; i < n; i ++)
+		{
+			a[i] = n - i;
+		}
+		
+		MergeSorter m = new MergeSorter(a);
+		m.sort();
+		System.out.println(m.getCounter());
+	}
+}

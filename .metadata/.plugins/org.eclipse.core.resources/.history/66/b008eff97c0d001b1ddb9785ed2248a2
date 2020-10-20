@@ -1,0 +1,12 @@
+
+public class BubbleSorter 
+{
+	private int[] a;
+	private int counter;
+	
+	public BubbleSorter(int[] a)
+	{
+		this.a = a;
+		counter = 0;
+	}
+}

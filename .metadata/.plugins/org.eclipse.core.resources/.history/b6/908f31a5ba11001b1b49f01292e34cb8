@@ -1,0 +1,12 @@
+
+public class CityComparator implements Comparable<City>
+{
+
+	@Override
+	public int compareTo(City o) 
+	{
+		
+		return 0;
+	}
+
+}

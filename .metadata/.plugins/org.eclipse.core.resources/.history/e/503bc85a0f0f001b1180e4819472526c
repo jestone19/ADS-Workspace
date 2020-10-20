@@ -1,0 +1,18 @@
+
+public class CityTest 
+{
+	public static void main (String[] args)
+	{
+		City a = new City("New York", "New York");
+		City b = new City("Dover", "Deleware");
+		City c = new City("Baltimore", "Maryland");
+		City d = new City("Baltimore", "Texas");
+		City e = new City("Nashville", "Tennesee");
+		City f = new City("Cleveland", "Ohio");
+		City g = new City("Minneapolis", "Minnesota");
+		City h = new City("San Diego", "California");
+		City i = new City("Los Angeles", "California");
+		
+		System.out.println(c.compareTo(d));
+	}
+}

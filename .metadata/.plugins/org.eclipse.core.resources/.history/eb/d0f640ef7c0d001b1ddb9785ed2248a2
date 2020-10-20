@@ -1,0 +1,6 @@
+
+public class BubbleSorter 
+{
+	private int[] a;
+	private int counter;
+}

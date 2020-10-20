@@ -1,0 +1,11 @@
+
+public class CityComparator implements Comparable<City>
+{
+
+	@Override
+	public int compareTo(City o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

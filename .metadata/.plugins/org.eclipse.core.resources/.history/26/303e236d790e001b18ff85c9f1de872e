@@ -1,0 +1,20 @@
+
+public class BubbleSorter 
+{
+	private int[] a;
+	private int counter;
+	
+	public BubbleSorter(int[] a)
+	{
+		this.a = a;
+		counter = 0;
+	}
+	
+	public void sort()
+	{
+		for (int i = a.length; i > 0; i --)
+		{
+			if (a[])
+		}
+	}
+}

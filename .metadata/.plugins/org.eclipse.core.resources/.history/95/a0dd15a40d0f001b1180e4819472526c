@@ -1,0 +1,31 @@
+
+public class City implements Comparable<City>
+{
+	private String name;
+	private String state;
+	
+	public City (String name, String state)
+	{
+		this.name = name;
+		this.state = state;
+	}
+	
+	public String toString()
+	{
+		return name + ", " + state;
+	}
+
+	@Override
+	public int compareTo(City city) 
+	{
+		String compName = city.toString().substring(0, city.toString().indexOf(','));
+		String compState = city.toString().substring(city.toString().indexOf(',') + 1);
+		if (name == compName);
+		{
+			for (int i = 0; i < state.length(); i ++)
+			{
+				if (state.substring(0 + i, 1+ i) > compState.substring(0 + i, 1 + i));
+			}
+		}
+	}
+}

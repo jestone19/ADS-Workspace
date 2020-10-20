@@ -1,0 +1,84 @@
+// Joshua Stone
+// ADS Period 2
+// October 19, 2020
+//
+// City.java
+//
+
+public class City implements Comparable<City>
+{
+	private String name;
+	private String state;
+	
+	//-------------------------------------------------------------------------
+	// Constructor with two string parameters for city name and state name
+	//-------------------------------------------------------------------------
+	public City (String name, String state)
+	{
+		this.name = name;
+		this.state = state;
+	}
+	
+	//-------------------------------------------------------------------------
+	// returns string representation of object in format "[name], [state]"
+	//-------------------------------------------------------------------------
+	@Override
+	public String toString()
+	{
+		return name + ", " + state + ";";
+	}
+
+	//-------------------------------------------------------------------------
+	// compares two city objects alphabetically
+	//-------------------------------------------------------------------------
+	@Override
+	public int compareTo(City city) 
+	{
+		String compName = 
+				city.toString().substring(0, city.toString().indexOf(','));
+		String compState = 
+				city.toString().substring(city.toString().indexOf(',') + 1);
+		if (name.equals(compName))
+		{
+			for (int i = 0; i < ((state.length() > compState.length())
+					? compState.length() : state.length()); i ++)
+			{
+				if (state.charAt(i) > compState.charAt(i))
+				{
+					return 1;
+				}
+				else if (state.charAt(i) < compState.charAt(i))
+				{
+					return -1;
+				}
+				else
+				{
+			
+				}
+			}
+			
+			return 0;
+		}
+		else
+		{
+			for (int i = 0; i < ((name.length() > compName.length()) 
+					? compName.length() : name.length()); i ++)
+			{
+				if (name.charAt(i) > compName.charAt(i))
+				{
+					return 1;
+				}
+				else if (name.charAt(i) < compName.charAt(i))
+				{
+					return -1;
+				}
+				else
+				{
+			
+				}
+			}
+			
+			return 0;
+		}
+	}
+}
